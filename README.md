@@ -27,15 +27,15 @@ beauty, and mindfulness based on their lifestyle and goals.
 3. How could these trends help influence Bellabeat marketing strategy?
 
 ## Deliverables
-1. [x] #739
+- [ ] #739
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete :tada:
-1. A clear summary of the business task  []
-2. A description of all data sources used   []
-3. Documentation of any cleaning or manipulation of data    []
-4. A summary of your analysis   []
-5. Supporting visualizations and key findings   []
-6. Your top high-level content recommendations based on your analysis   []
+- [ ] A clear summary of the business task
+- [ ] A description of all data sources used
+- [ ] Documentation of any cleaning or manipulation of data 
+- [ ] A summary of your analysis
+- [ ] Supporting visualizations and key findings
+- [ ] Your top high-level content recommendations based on your analysis
 
 ## Data Used
 
