@@ -27,6 +27,7 @@ beauty, and mindfulness based on their lifestyle and goals.
 3. How could these trends help influence Bellabeat marketing strategy?
 
 ## Deliverables
+[]
 
 1. A clear summary of the business task  []
 2. A description of all data sources used   []
