@@ -28,7 +28,7 @@ beauty, and mindfulness based on their lifestyle and goals.
 
 ## Deliverables
 
-- [X] [A clear summary of the business task](https://github.com/abhisindh/Bellabeat_Product_Analysis/blob/master/001_Ask/Business%20task%20statement.pdf "Business_task_statement.pdf")
+- [X] [A clear summary of the business task](https://github.com/abhisindh/Bellabeat_Product_Analysis/blob/master/001_Ask/Business_task_statement.pdf "Business_task_statement.pdf")
 - [ ] A description of all data sources used
 - [ ] Documentation of any cleaning or manipulation of data 
 - [ ] A summary of your analysis

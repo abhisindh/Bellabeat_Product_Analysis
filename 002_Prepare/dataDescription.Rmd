@@ -1,0 +1,234 @@
+---
+title: "Data description"
+author: "Abhisindh"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r message=FALSE, warning=FALSE, error=FALSE, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#Pacakges
+library(stats)
+library(Hmisc)
+library(tidyverse)
+library(readr)
+```
+
+# dailyActivity_merged
+
+```{r include=FALSE}
+dailyActivity_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(dailyActivity_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# dailyCalories_merged
+
+```{r include=FALSE}
+dailyCalories_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/dailyCalories_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(dailyCalories_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# dailyIntensities_merged
+
+```{r include=FALSE}
+dailyIntensities_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/dailyIntensities_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(dailyIntensities_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# dailySteps_merged
+
+```{r include=FALSE}
+dailySteps_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/dailySteps_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(dailySteps_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# heartrate_seconds_merged
+
+```{r include=FALSE}
+heartrate_seconds_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/heartrate_seconds_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(heartrate_seconds_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# hourlyCalories_merged
+
+```{r include=FALSE}
+hourlyCalories_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/hourlyCalories_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(hourlyCalories_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# hourlyIntensities_merged
+
+```{r include=FALSE}
+hourlyIntensities_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/hourlyIntensities_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(hourlyIntensities_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# hourlySteps_merged
+
+```{r include=FALSE}
+hourlySteps_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/hourlySteps_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(hourlySteps_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# minuteCaloriesNarrow_merged
+
+```{r include=FALSE}
+minuteCaloriesNarrow_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/minuteCaloriesNarrow_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(minuteCaloriesNarrow_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# minuteCaloriesWide_merged
+
+```{r include=FALSE}
+minuteCaloriesWide_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/minuteCaloriesWide_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(minuteCaloriesWide_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# minuteIntensitiesNarrow_merged
+
+```{r include=FALSE}
+minuteIntensitiesNarrow_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/minuteIntensitiesNarrow_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(minuteIntensitiesNarrow_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# minuteIntensitiesWide_merged
+
+```{r include=FALSE}
+minuteIntensitiesWide_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/minuteIntensitiesWide_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(minuteIntensitiesWide_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# minuteMETsNarrow_merged
+
+```{r include=FALSE}
+minuteMETsNarrow_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/minuteMETsNarrow_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(minuteMETsNarrow_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# minuteSleep_merged
+
+```{r include=FALSE}
+minuteSleep_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/minuteSleep_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(minuteSleep_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# minuteStepsNarrow_merged
+
+```{r include=FALSE}
+minuteStepsNarrow_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/minuteStepsNarrow_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(minuteStepsNarrow_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# minuteStepsWide_merged
+
+```{r include=FALSE}
+minuteStepsWide_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/minuteStepsWide_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(minuteStepsWide_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# sleepDay_merged
+
+```{r include=FALSE}
+sleepDay_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/sleepDay_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(sleepDay_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
+
+# weightLogInfo_merged
+
+```{r include=FALSE}
+weightLogInfo_merged <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/weightLogInfo_merged.csv")
+```
+
+```{r echo=FALSE}
+describe(weightLogInfo_merged) %>% html()
+```
+
+<hr style="border:2px solid blue">
