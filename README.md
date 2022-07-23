@@ -28,12 +28,12 @@ beauty, and mindfulness based on their lifestyle and goals.
 
 ## Deliverables
 
-1. A clear summary of the business task  [X]
-2. A description of all data sources used   [ ]
-3. Documentation of any cleaning or manipulation of data    [ ]
-4. A summary of your analysis   [ ]
-5. Supporting visualizations and key findings   [ ]
-6. Your top high-level content recommendations based on your analysis   [ ]
+- [ ] A clear summary of the business task
+- [ ] A description of all data sources used
+- [ ] Documentation of any cleaning or manipulation of data 
+- [ ] A summary of your analysis
+- [ ] Supporting visualizations and key findings
+- [ ] Your top high-level content recommendations based on your analysis
 
 ## Data Used
 
