@@ -1,3 +1,6 @@
+![top line](./Resources/Images/topLine.png)  
+
+![logo](./Resources/Images/logo.png)  ![full logo](./Resources/Images/fullLogo.png)
 # Bellabeat Product Analysis
 
 [**Bellabeat**](https://bellabeat.com "Bellabeat website") is a high-tech manufacture of health focused products for women.Bellabeat is a successful small company, but they have the  potential to become a large palayer in the global smart device market. 

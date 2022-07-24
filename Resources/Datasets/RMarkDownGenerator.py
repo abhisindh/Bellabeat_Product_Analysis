@@ -1,5 +1,5 @@
 import os
-list_ = os.listdir("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16")
+list_ = os.listdir("D:/programming/Bellabeat_product_analysis/Resources/Datasets/Fitabase Data 4.12.16-5.12.16")
 
 print('''---
 title: "Data description"
@@ -24,9 +24,9 @@ for i in list_:
    name = i[0:-4]
    print(f"# {name}")
    print("```{r include=FALSE}")
-   print(f'{name} <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Bellabeat_Dataset/Fitabase Data 4.12.16-5.12.16/{name}.csv")')
+   print(f'{name} <- read_csv("D:/programming/Bellabeat_product_analysis/Resources/Datasets/Fitabase Data 4.12.16-5.12.16/{name}.csv")')
    print('```\n')
-   print("```{r echo=FALSE}")
-   print(f"describe({name}) %>% html()")
-   print('```\n')
-   print('<hr style="border:2px solid blue">')
+   #print("```{r echo=FALSE}")
+   #print(f"describe({name}) %>% html()")
+   #print('```\n')
+   #print('<hr style="border:2px solid blue">')
