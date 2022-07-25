@@ -1,10 +1,31 @@
-# Changelog
-All notable changes to this project will be documented in this file.
+![top line](../Resources/Images/topLine.png)
+# ChangeLog
+All notable changes to the data in this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-<!-- ![](https://img.shields.io/badge/-unreleased-lightgrey)
+## [1.0.1] - 2022-07-24
+### Modified
+ - Activity : Changed the formatting of `ActivityDate` column.
+### Added
+ - Activity : Added a `date` column with different formatting.
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+ <!-- ![](https://img.shields.io/badge/-unreleased-lightgrey)
 
 ## [1.7.3] - 2022-06-22
 ### Bugfix
@@ -80,16 +101,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
    request pipelines.
  - Tox tests: Modified the
    [Tox tests template](https://gitlab.developers.cam.ac.uk/uis/devops/continuous-delivery/ci-templates/-/blob/master/auto-devops/tox-tests.yml)
-   to make the `documentation` job run for pipelines other than merge request
+   to make the `d
+ocumentation` job run for pipelines other than merge request
    pipelines (previously the job was never running due to a bug in the job
    rules).
 
 ## [1.0.1] - 2020-08-06
 ### Added
  - pypi-release: Added generic stand along jobs designed to allow easy upload of
-   Python packages to PyPI. -->
+   Python packages to PyPI. 
 
-![](https://img.shields.io/badge/-released-orange)
-## [1.0.0] - 2022-07-24
-### Added
- - changeLog.md File
+ ![](https://img.shields.io/badge/-released-orange)  
+  -->

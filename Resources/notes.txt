@@ -1,0 +1,28 @@
+# 
+
+```{r}
+Activity <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+ <- distinct()
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**

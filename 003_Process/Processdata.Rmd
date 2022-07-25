@@ -1,0 +1,79 @@
+---
+title: "Process data"
+author: "Abhisindh"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r include=FALSE}
+# packages
+library(readr)
+
+```
+
+# Daily Activity
+
+```{r}
+Activity <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+Activity <- distinct(Activity)
+```
+
+No duplicate data found *(There are 33 distinct Id as opposed to 30 as expected, there is not enough information to find which is duplicate, so we are assuming all 33 Id s as distinct)*
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+Activity %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrevelant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+```{r}
+Activity$ActivityDate=as.POSIXct(Activity$ActivityDate, format="%m/%d/%Y", tz=Sys.timezone())
+Activity$date <- format(Activity$ActivityDate, format = "%m/%d/%y")
+Activity$ActivityDate=as.Date(Activity$ActivityDate, format="%m/%d/%Y", tz=Sys.timezone())
+Activity$date=as.Date(Activity$date, format="%m/%d/%Y")
+```
+
+# Daily Calories
+
+```{r}
+Calories <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/dailyCalories_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+Calories <- distinct(Calories)
+```
+
+No duplicate data found
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+Calories %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrevelant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+
