@@ -8,10 +8,11 @@ output: html_document
 ```{r include=FALSE}
 # packages
 library(readr)
+library(dplyr)
 
 ```
 
-# Daily Activity
+# 1.Activity
 
 ```{r}
 Activity <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged.csv")
@@ -47,7 +48,7 @@ Activity$ActivityDate=as.Date(Activity$ActivityDate, format="%m/%d/%Y", tz=Sys.t
 Activity$date=as.Date(Activity$date, format="%m/%d/%Y")
 ```
 
-# Daily Calories
+# 2.Calories
 
 ```{r}
 Calories <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/dailyCalories_merged.csv")
@@ -76,4 +77,477 @@ No missing data found
 -   [x] **Validate and QA data**
 -   [x] **Formatting**
 
+# 3.Intesities
 
+```{r}
+Intensities <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/dailyIntensities_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+Intensities <- distinct(Intensities)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+  Intensities %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+```{r}
+Intensities$ActivityDay=as.Date(Intensities$ActivityDay, format="%m/%d/%Y", tz=Sys.timezone())
+```
+
+
+# 4.Steps
+
+```{r}
+Steps <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/dailySteps_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+Steps <- distinct(Steps)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+Steps %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+# 5.Heartrate
+
+```{r}
+Heartrate <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/heartrate_seconds_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+Heartrate <- distinct(Heartrate)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+Heartrate  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+# 6.HourlyCalories
+
+```{r}
+HourlyCalories <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/hourlyCalories_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+HourlyCalories <- distinct(HourlyCalories)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+HourlyCalories  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+# 7.HourlyIntensities
+
+```{r}
+HourlyIntesities <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/hourlyIntensities_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+HourlyIntesities <- distinct(HourlyIntesities)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+HourlyIntesities  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+
+# 8.HourlySteps
+
+```{r}
+HourlySteps <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/hourlySteps_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+HourlySteps <- distinct(HourlySteps)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+HourlySteps  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+# 9.MinuteCaloriesNarrow
+
+```{r}
+MinuteCaloriesNarrow <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/minuteCaloriesNarrow_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+MinuteCaloriesNarrow <- distinct(MinuteCaloriesNarrow)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+MinuteCaloriesNarrow  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+# 10.MinuteCaloriesWide
+
+```{r}
+MinuteCaloriesWide <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/minuteCaloriesWide_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+MinuteCaloriesWide <- distinct(MinuteCaloriesWide)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+MinuteCaloriesWide  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+
+# 11.MinuteIntensitiesNarrow
+
+```{r}
+MinuteIntensitiesNarrow <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/minuteIntensitiesNarrow_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+MinuteIntensitiesNarrow <- distinct(MinuteIntensitiesNarrow)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+MinuteIntensitiesNarrow  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+# 12.MinuteIntensitiesWide
+
+```{r}
+MinuteIntensitiesWide <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/minuteIntensitiesWide_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+MinuteIntensitiesWide <- distinct(MinuteIntensitiesWide)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+MinuteIntensitiesWide  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+# 13.MinuteMETsNarrow
+
+```{r}
+MinuteMETsNarrow <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/minuteMETsNarrow_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+MinuteMETsNarrow <- distinct(MinuteMETsNarrow)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+MinuteMETsNarrow  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+# 14.MinuteSleep
+
+```{r}
+MinuteSleep <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/minuteSleep_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+MinuteSleep <- distinct(MinuteSleep)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+MinuteSleep  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+# 15.MinuteStepsNarrow
+
+```{r}
+MinuteStepsNarrow <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/minuteStepsNarrow_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+MinuteStepsNarrow <- distinct(MinuteStepsNarrow)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+MinuteStepsNarrow  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+# 16.MinuteStepsWide
+
+```{r}
+MinuteStepsWide <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/minuteStepsWide_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+MinuteStepsWide <- distinct(MinuteStepsWide)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+MinuteStepsWide  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+
+# 17.Sleep
+
+```{r}
+Sleep <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/sleepDay_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+Sleep <- distinct(Sleep)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+Sleep  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**
+```{r}
+Sleep$SleepDay=as.POSIXct(Sleep$SleepDay, format="%m/%d/%Y %I:%M:%S %p", tz=Sys.timezone())
+Sleep$date <- format(Sleep$SleepDay, format = "%m/%d/%y")
+Sleep$date=as.Date(Sleep$date, "% m/% d/% y")
+```
+
+# 18.WeightLog
+
+```{r}
+WeightLog <- read_csv("../Resources/Datasets/Fitabase Data 4.12.16-5.12.16/weightLogInfo_merged.csv")
+```
+
+-   [x] **Eliminate duplicate data.**
+
+```{r}
+WeightLog <- distinct(WeightLog)
+```
+
+No duplicate data found 
+
+-   [x] **Repair incorrect data.** No incorrect data found
+-   [x] **Handle missing data.**
+
+```{r}
+WeightLog  %>%
+  summarise_all(~ sum(is.na(.)))
+```
+
+No missing data found
+
+-   [x] **Remove irrelevant data.** No irrelevant data
+-   [x] **Filter outlying data** No outlying data
+-   [x] **Validate and QA data**
+-   [x] **Formatting**

@@ -33,7 +33,7 @@ beauty, and mindfulness based on their lifestyle and goals.
 
 - [X] [A clear summary of the business task](https://github.com/abhisindh/Bellabeat_Product_Analysis/blob/master/001_Ask/Business_Task_statement.md "Business task statement")
 - [X] [A description of all data sources used](https://github.com/abhisindh/Bellabeat_Product_Analysis/blob/master/002_Prepare/Data_Description.md "Data Description")
-- [ ] Documentation of any cleaning or manipulation of data 
+- [X] [Documentation of any cleaning or manipulation of data](https://github.com/abhisindh/Bellabeat_Product_Analysis/blob/master/003_Process/changeLog.md "Change Log") 
 - [ ] A summary of your analysis
 - [ ] Supporting visualizations and key findings
 - [ ] Your top high-level content recommendations based on your analysis
