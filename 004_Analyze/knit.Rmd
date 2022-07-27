@@ -1,0 +1,58 @@
+---
+title: "Analysis"
+author: "Abhisindh"
+date: "`r Sys.Date()`"
+output: html_document
+params :
+  envir : parent.frame()
+    
+
+---
+
+
+```{r include=FALSE}
+# packages
+library(dplyr)
+```
+
+Checking number ofdistinct Ids
+
+```{r, include=FALSE}
+source("your-script.R", local = knitr::knit_global())
+# or sys.source("your-script.R", envir = knitr::knit_global())
+
+n_distinct(Activity$Id)
+n_distinct(Calories$Id)
+n_distinct(Heartrate$Id)
+n_distinct(Intensities$Id)
+n_distinct(Sleep$Id)
+n_distinct(WeightLog$Id)
+```
+
+Since 14 and 8 paricipants are very insignificant so, we are going to focus only on `Acitiviy` , `Calories` , `Intensities` and `Sleep`
+```{r}
+#plot(Calories)
+```
+
+# Relation between activity and Calories Burnt
+```{r}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
