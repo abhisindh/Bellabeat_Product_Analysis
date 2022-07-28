@@ -35,8 +35,9 @@ beauty, and mindfulness based on their lifestyle and goals.
 - [X] [A description of all data sources used](https://github.com/abhisindh/Bellabeat_Product_Analysis/blob/master/002_Prepare/Data_Description.md "Data Description")
 - [X] [Documentation of any cleaning or manipulation of data](https://github.com/abhisindh/Bellabeat_Product_Analysis/blob/master/003_Process/changeLog.md "Change Log") 
 - [X] [A summary of analysis](https://github.com/abhisindh/Bellabeat_Product_Analysis/blob/master/004_Analyze/Analyze.md "Analysis summary")
-- [ ] Supporting visualizations and key findings
+- [X] [Supporting visualizations and key findings](https://github.com/abhisindh/Bellabeat_Product_Analysis/blob/master/005_Share/Presentation.pptx "Presentation")
 - [ ] Your top high-level content recommendations based on your analysis
+
 
 ## Data Used
 
