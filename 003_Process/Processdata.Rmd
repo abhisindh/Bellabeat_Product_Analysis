@@ -42,10 +42,17 @@ No missing data found
 -   [x] **Formatting**
 
 ```{r}
+# convert Id to string
+Activity$Id = as.character(Activity$Id)
+# Change date format
 Activity$ActivityDate=as.POSIXct(Activity$ActivityDate, format="%m/%d/%Y", tz=Sys.timezone())
 Activity$date <- format(Activity$ActivityDate, format = "%m/%d/%y")
 Activity$ActivityDate=as.Date(Activity$ActivityDate, format="%m/%d/%Y", tz=Sys.timezone())
 Activity$date=as.Date(Activity$date, format="%m/%d/%Y")
+# New column days from start date
+Activity$days_from_start = floor(difftime( Activity$ActivityDate ,"2016-4-11", units = "days"))
+# New column weekdat
+Activity$weekday <- weekdays(Activity$ActivityDate)
 ```
 
 # 2.Calories

@@ -19,8 +19,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.1] - 2022-07-24
 ### Modified
  - Activity : Changed the formatting of `ActivityDate` column.
+ - Activity : Changed the datatype of `Id` Column from int to string
 ### Added
  - Activity : Added a `date` column with different formatting.
+ - Activity : Added a `days_from_start` column.
 
 
 
